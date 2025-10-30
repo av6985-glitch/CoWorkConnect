@@ -1,1 +1,6 @@
-// Handles database configuration and connections
+// Handles database configuration and setup
+
+function connectToDatabase() {}
+function closeConnection() {}
+
+module.exports = { connectToDatabase, closeConnection };

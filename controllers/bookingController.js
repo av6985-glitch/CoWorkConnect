@@ -1,1 +1,11 @@
-// Handles booking logic and coordination between user requests and models
+// Coordinates booking requests between models
+
+class BookingController {
+    constructor() {}
+
+    createBooking() {}
+    cancelBooking() {}
+    getUserBookings() {}
+}
+
+module.exports = BookingController;

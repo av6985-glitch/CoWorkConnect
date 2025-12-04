@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CoWorkConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header>
+    <h2>CoWorkConnect</h2>
+</header>
+
+<section>
+    <h3>Login</h3>
+
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+
+    <button id="loginBtn" type="button">Login</button>
+
+    <p>New user? <a href="register.html">Register</a></p>
+</section>
+
+<script type="module" src="js/app.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("loginBtn")
+    btn.onclick = () => {
+        const email = document.getElementById("email").value
+        const password = document.getElementById("password").value
+        app.auth.login(email, password)
+    }
+})
+</script>
+
+</body>
+</html>
